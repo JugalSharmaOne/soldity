@@ -1,0 +1,136 @@
+https://www.simplilearn.com/tutorials/blockchain-tutorial/blockchain-interview-questions
+
+1. Differentiate between Blockchain and Hyperledger?
+
+
+2: How do you explain Blockchain technology to someone who doesn't know it?
+
+
+3: What is Merkel Tree?
+Merkel Tree is a data structure that is used for verifying a block. 
+It is in the form of a binary tree containing cryptographic hashes of
+ each block. A Merkle tree is structured similarly to a binary tree where
+ each leaf node is a hash of a block of transactional data and each
+ non-leaf node is a hash of its leaf node. The Merkel root or hash root 
+is the final hash root of all the transaction hashes. It encompasses all
+ the transactions that are
+ underlying all the non-leaf nodes.
+
+
+4. What do you mean by blocks in Blockchain technology?
+
+Blockchain is a distributed database of immutable records called 
+blocks, which are secured using cryptography. Refer to the video 
+to see the various attributes of a block.
+
+
+5. How is Blockchain distributed ledger different from a traditional ledger?
+
+A Blockchain distributed ledger is highly transparent as compared 
+to a traditional ledger.
+
+
+::Blockchain distributed ledgers are irreversible. Information 
+registered on a distributed ledger cannot be modified whereas on 
+a traditional ledger 
+it is reversible.
+
+
+6. How can you identify a block?
+
+
+
+7. What is cryptography? What is its role in Blockchain?
+
+
+8. What are the different types of Blockchain?
+
+::/In Consortium Blockchain, the consensus process is controlled by
+ only specific nodes. However, ledgers are visible to all participants
+ in the consortium Blockchain. Example, Ripple.
+
+
+:://public blockchainPublic Blockchain ledgers are visible to all
+ the users on the internet and any user can verify and add a block 
+of transactions to the Blockchain.
+ Examples, Bitcoin, and Ethereum.
+
+
+:://Private Blockchain ledgers are visible to users on the 
+internet but only specific users
+ in the organization can verify and add transactions. 
+
+
+9. What happens when you try to deploy a file with multiple contracts?
+
+In Blockchain, deploying a file with multiple contracts is not 
+possible. The compiler only deploys the last contract from the
+ uploaded file and 
+the remaining contracts are neglected.
+
+
+10. What is a Genesis Block?
+
+:://The genesis block is the first block in the Blockchain which is also known as block 0
+
+
+::/In Blockchain, it is the only block that doesn’t refer to its previous block.
+
+:://It defines the parameters of the Blockchain such as,level of difficulty,
+consensus mechanism etc. to mine blocks
+
+
+11. How is the hash (Block signature) generated?
+
+::/The process of generating a block signature involves:
+
+::/Passing transaction details through a one-way hash function i.e., SHA-256.
+
+
+12. List down some of the extensively used cryptographic algorithms.
+
+SHA - 256
+RSA (Rivest-Shamir-Adleman)
+Triple DES
+Ethash
+Blowfish
+
+
+13. What is a smart contract and list some of its applications?
+
+14. What is the Ethereum network and how many
+ Ethereum networks are you familiar with?
+
+:There are three types of networks in Ethereum:
+
+:://Test network (like Ropsten, Kovan, Rinkeby) - Allow users to run 
+their smart contracts with
+ no fees before deploying it on the main network 
+
+
+
+15:. Where do nodes run a smart contract code? 
+
+Nodes run smart contracts code on Ethereum Virtual Machine (EVM). It 
+is a virtual machine designed to operate as a runtime environment for Ethereum-based smart contracts.
+
+
+
+16. What is a Dapp and how is it different from a normal application?
+A Dapp has its back-end code (smart contract) which runs on a 
+decentralized 
+peer-to-peer network
+Smart contract (backend code)
+Blockchain (P2P contract) 
+
+
+
+17. Name some leading open source platforms for developing Blockchain applications.
+
+1:/Ethereum is one of the popular platforms for building Blockchain-based applications
+
+2:/Eris is used for building enterprise-based solutions
+
+3:/Some of the other widely used platforms for building Blockchain include Hyperledger, Multichain, Open chain.
+
+ 

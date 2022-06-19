@@ -1,0 +1,672 @@
+//bytes  fixes size
+contract array{
+
+
+bytes5 public temp;
+
+bytes7  public temps;
+
+
+
+function getter() public {
+
+temp="abcde";
+
+temps="1234567";
+
+}
+
+
+function get() public view  returns(bytes1){
+
+
+return  temp[2];
+
+}
+
+}
+
+
+
+//sturct 
+
+
+
+
+contract array{
+
+
+struct Emp{
+
+   string name;
+
+   uint age;
+
+   address ower;
+
+
+}
+
+Emp public emp;
+
+
+Emp[] public emps;
+
+function setVal() public {
+
+   Emp memory emp1=Emp("jugal" , 22 , 0x617F2E2fD72FD9D5503197092aC168c91465E7f2 );
+
+   // emp=emp1;
+
+   Emp memory emp2=Emp({name:"ajay", age:22 ,ower:msg.sender });
+
+
+Emp memory emp3;
+
+emp3.name="kanika";
+
+emp3.age=24;
+
+emp3.ower=0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+
+
+emps.push(emp1);
+emps.push(emp2);
+emps.push(emp3);
+
+}
+
+
+
+
+//mapping it is a dataType
+
+}
+
+
+
+
+
+contract mappings{
+
+
+
+mapping(uint => string) public emp_id;
+
+
+function setIds() public {
+
+
+emp_id[31]="jugal sharma";
+
+emp_id[1]="kanika";
+emp_id[14]="karan";
+emp_id[22]="nanu";
+emp_id[30]="mother fucker all jpaness";
+
+
+}
+
+function getId(uint _id) public view returns(string memory){
+
+
+
+return emp_id[_id];
+
+
+}
+
+}
+
+
+
+
+
+struct donor_dts{
+
+string name;
+
+uint age;
+
+
+string addre;
+
+
+uint don;
+
+}
+
+
+contract accu{
+
+
+mapping(address=>donor_dts) public acc_info;
+
+function set(  string memory _names , uint _ages , string memory _addres , uint _dons) public {
+
+
+acc_info[msg.sender]=donor_dts(_names , _ages , _addres , acc_info[msg.sender].don + _dons);
+
+
+
+
+
+
+
+
+}
+
+
+function  delt() public{
+
+
+delete acc_info[msg.sender];
+
+}
+
+
+}
+
+
+
+
+
+//::://///visiblity
+
+
+//use status variable
+
+//use function
+
+//.public
+
+//. private
+
+
+//interinal
+
+
+//.external
+
+
+contract ifels{
+
+
+
+
+
+function P()public view returns(uint){
+
+
+uint gae=20;
+
+return gae;
+//everywhere
+
+}
+function blic()private view returns(uint){
+
+
+uint gae=20;
+
+return gae;
+
+
+//only within the contract
+
+
+}
+
+function Publi()external view returns(uint){
+
+
+uint gae=20;
+
+return gae;
+
+
+}
+
+function ublic()internal view returns(uint){
+
+
+uint gae=20;
+
+return gae;
+
+
+//within the contract & in drived contract
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+//event all important 
+
+
+
+contract events{
+
+
+event balance(address account, string message , uint value);
+
+
+function setData(uint _val) public{
+
+emit balance(msg.sender, "has value" , _val);
+
+} 
+
+
+}
+
+
+//indexOf import 
+contract chapApp{
+
+
+event chat(address indexed _from , address _to ,  string message );
+
+
+function sendMess(address to_ , string memory message_ ) public{
+
+
+emit chat(msg.sender , to_ , message_);
+
+}
+
+}
+
+
+
+
+
+//::///if eles value
+
+contract ifs{
+
+
+function fun(uint _x)public pure returns(string memory){
+
+string memory val;
+
+
+if(_x   > 100){
+
+    val="graten then 100";
+}
+else if(_x < 100){
+
+
+val="smaller then 100";
+}
+
+else{
+
+    val="equal to 100";
+}
+
+
+return val;
+}
+
+
+}
+
+
+
+
+
+
+
+//:://Enums
+
+
+contract eum{
+
+enum Status{
+
+    Pending,
+
+    Shipped,
+
+    Complete,
+
+    Rejected,
+
+    Cancel
+
+
+}
+
+
+Status public status;
+
+
+function getStatus()public view returns(Status){
+
+return status;
+
+} 
+
+
+function setStatus(Status _st) public{
+
+
+status=_st;
+
+}
+
+
+function Rejec() public{
+
+
+    status=Status.Rejected;
+}
+
+
+function Pen() public{
+
+    delete status;
+}
+
+}
+
+
+
+
+
+
+
+
+
+////::///inheritance
+
+
+///inheritance _blaockain
+
+//parants 
+
+contract A{
+
+uint public a=45;
+
+function fun1() public pure returns(string memory){
+
+
+return "i am in contract A";
+}
+
+function fun2() public pure returns(string memory){
+
+
+return "i am in contract B";
+}
+
+
+
+function fun3() public pure virtual returns(string memory){
+
+
+return "i am in contract C";
+}
+
+
+function fun4() public pure virtual returns(string memory){
+
+
+return "i am in contract D";
+}
+
+}
+
+
+//child contract
+contract B is A{
+function fun3() public pure override returns(string memory){
+
+
+return "i am in contract fuck";
+}
+
+
+function fun4() public pure override returns(string memory){
+
+
+return "i am in contract Dick";
+}
+
+
+}
+
+
+
+
+//::: Requre very import
+
+
+
+
+
+
+
+
+
+
+contract req{
+
+address public owner =msg.sender;
+
+
+uint public age=20;
+
+
+
+function requirecheck(uint _x)public {
+
+
+    age=age+5;
+
+    require(_x > 2 , " this error value is x2");//error show
+}
+
+
+function onlyower() public{
+
+ 
+
+    require(owner == msg.sender , "error you are we owner");
+
+       age=age-2;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+contract one{
+
+
+modifier scamcode(){
+for (uint _i=0; _i<10; _i++){
+
+
+}
+
+_;
+
+
+}
+
+
+function fun1() public pure scamcode returns(string memory) {
+
+
+return "fun 1 say is ";
+}
+function fun2() public pure returns(uint _x){
+
+
+_x=20;
+
+}
+function fun3() public view returns(address ){
+
+
+
+
+return msg.sender;
+
+}
+
+}
+
+
+
+
+
+
+
+contract ui{
+
+
+address public ower =msg.sender;
+
+
+
+modifier onlywer(){
+
+
+require(ower==msg.sender,"your not the owner");
+
+
+_;
+}
+
+function start()public onlywer{
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+contract one{
+
+enum  Status{
+
+
+pending,
+shipped,
+accepted,
+rejected,
+cancel
+
+
+}
+
+
+Status  public status;
+
+
+function  get() public view returns(Status){
+
+return status;
+
+}
+
+
+function setatus( Status _status)public {
+
+
+status =_status;
+}
+
+
+function rej() public{
+
+status=Status.rejected;
+
+}
+
+function  reset()public {
+
+delete status;
+
+}
+
+
+}
+
+
+
+
+//storage . state var . blockchain //gas cost 
+
+
+//memory  local var . is not parmant .low gas fee 
+
+//type memory 
+
+
+
+//calldata
+
+.Ram
+
+.Function Input
+
+.Low gass cost
+
+.
+
+
+
+
+library fun{
+
+
+function add()public pure returns(uint){
+
+return 5 + 4;
+
+}
+
+}
+
+contract app{
+	
+	function call()public pure returns(uint){
+
+return fun.add();
+
+	}
+}

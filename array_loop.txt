@@ -1,0 +1,133 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.4.22 <0.9.0;
+
+
+
+
+// contract array{
+
+
+
+// uint[]public array=[1 , 7 , 6 , 8 , 9];
+
+
+// function Array()public view returns(uint){
+
+
+// return array.length;
+
+// }
+
+// function pusha(uint _array)public{
+
+
+// array.push(_array);
+
+// }
+
+
+
+// function get() public view returns(uint) {
+
+
+// uint temp;
+
+// temp=array[3];
+
+
+// return temp;
+
+// }
+
+
+
+// //all check all
+
+
+// function Get_Update_delets()public{
+
+// uint temp;
+
+// temp=array[3];
+
+// //update 
+
+// arr[2]=3000;
+
+
+// //delets
+
+
+// delete arr[4];
+
+
+// return temp;
+
+// return temp;
+
+// }
+
+
+// }
+
+
+
+
+
+contract Loop{
+
+
+
+uint[5]public arr;
+
+
+function Loop_arr(uint _x)public  {
+
+
+for(uint i=0; i<arr.length; i++){
+
+
+	arr[i]=_x+i;
+}
+
+
+
+}
+
+
+function createASrr()  public pure returns(uint){
+
+uint[] memory arrme=new uint[](3);
+
+
+return arrme[1];
+
+}
+
+
+}
+
+
+
+
+constructor(){
+
+arr=[10 , 20 , 30 , 40, 50];
+
+}
+
+
+function returnas() public view returns(uint[5] memory){
+
+
+return arr;
+
+}
+}
+
+
+funtion dyin(public view retuns(uint[]memeory){
+
+
+return arr;}

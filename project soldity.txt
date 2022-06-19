@@ -1,0 +1,281 @@
+import "@chainlink/contracts/src/v0.8/ConfirmedOwner.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
+
+
+contract id{
+
+
+
+
+address payable public add=payable(msg.sender);
+
+
+function blockNumber()public view returns(uint add){
+
+
+return block.number;
+
+}
+
+
+
+
+function gaslimit() public view returns(uint add){
+
+
+ return block.gaslimit;
+
+}
+
+
+receive() external payable{
+
+
+
+}
+
+
+
+function checkBalan()public view returns(uint){
+
+
+return address(this).balance;
+
+}
+
+
+function returnAmm()public{
+
+
+
+
+add.transfer(3 ether);
+
+
+
+require(add == msg.sender,"this address is invaled");
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+//importnat
+
+
+
+contract he{
+
+
+event ones(address  account , string name);
+
+
+function names(string memory _name)public{
+
+
+emit ones(msg.sender , _name);
+
+}
+
+}
+
+
+contract one{
+
+
+address payable public owner=payable(msg.sender);
+
+
+
+
+
+
+
+receive() external payable{
+
+
+}
+
+
+function CheckBalance() public view returns(uint){
+
+
+
+return address(this).balance;
+
+}
+
+
+
+function WithDraw()public{
+
+
+
+
+
+owner.transfer(3 ether);
+
+
+
+
+}
+
+
+
+
+
+
+
+function Block_Number()public view returns(uint){
+
+
+
+return block.number;
+
+}
+
+
+
+
+function check_difficulty() public view returns(uint){
+
+
+return block.difficulty;
+
+}
+
+
+function MinerAddress() public view returns(address payable){
+
+
+return block.coinbase;
+
+}
+
+
+function Timestamp() public view returns(uint){
+
+
+return block.timestamp;
+
+}
+
+
+
+}
+
+
+
+
+contract one{
+
+
+address payable public owner=payable(msg.sender);
+
+
+
+
+
+
+
+receive() external payable{
+
+
+}
+
+
+function CheckBalance() public view returns(uint){
+
+
+
+return address(this).balance;
+
+}
+
+
+
+function WithDraw()public{
+
+
+
+
+
+owner.transfer(3 ether);
+
+
+
+
+}
+function WithDraw(address payable owner)public payable{
+
+
+
+
+
+// owner.transfer(3 ether);
+
+
+// (bool sent,)=owner.call{value:3 ether }("");
+
+
+
+(bool sent,)=owner.call{value:msg.value}("");
+
+require(sent , "send ether failed");
+
+
+
+}
+
+
+
+
+
+
+function Block_Number()public view returns(uint){
+
+
+
+return block.number;
+
+}
+
+
+
+
+function check_difficulty() public view returns(uint){
+
+
+return block.difficulty;
+
+}
+
+
+function MinerAddress() public view returns(address payable){
+
+
+return block.coinbase;
+
+}
+
+
+function Timestamp() public view returns(uint){
+
+
+return block.timestamp;
+
+}
+
+
+
+}
+

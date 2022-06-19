@@ -1,0 +1,37 @@
+https://www.javatpoint.com/python-for-loop
+\1:View
+2:Pure
+3:Global var
+4:var
+5:if else
+6:Array
+7:string
+8:recieve
+9:fallback
+10:Struct
+11:mapping
+12:visibility
+14:Ether
+15:Event
+16:Loop
+17:Emup
+18:Address
+19:function
+20:constructor
+21:modifier
+22:bytes
+23:uints
+24:uint256
+Solidity - Abstract Contracts
+
+contract Calculator {
+   function getResult() public view returns(uint);
+}
+contract Test is Calculator {
+   function getResult() public view returns(uint) {
+      uint a = 1;
+      uint b = 2;
+      uint result = a + b;
+      return result;
+   }
+}

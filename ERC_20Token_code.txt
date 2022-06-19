@@ -1,0 +1,321 @@
+1::payable _code
+
+
+
+ address payable user=payable(0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2);
+  
+function payETH() public payable{
+
+
+}
+
+function getbalance()public  view returns(uint){
+
+
+return address(this).balance;
+
+         
+}
+ 
+
+function sendEtherAcoount() public {
+
+
+
+user.transfer(1 ether);
+
+
+}
+
+
+}
+                     
+
+2::://fallback and recive
+
+
+
+
+fallBack data Code
+
+contract Array{
+
+
+ fallback() external payable{
+
+
+ }
+function checkBal() public view returns(uint){
+
+
+    return address(this).balance;//check adders and blance
+}
+
+}   
+
+
+ ://recive Code
+                   
+
+
+receive() external payable{
+
+
+}
+ 
+
+
+function checkBal() public view returns(uint){
+
+
+    return address(this).balance;//check adders and blance
+}
+
+}                                                      
+
+
+  fallback() external payable{
+
+
+      
+  }
+
+
+receive() external payable{
+
+
+}
+ 
+
+
+function checkBal() public view returns(uint){
+
+
+    return address(this).balance;//check adders and blance
+}
+
+}       
+
+
+3:://sendEther transfer _ Call
+
+
+//send //use account ether send -> return boolen value true and false ->limt gase 2300 ->tranfer false fall
+
+
+//use reuire 
+
+
+//tranfer ->limt 2300 gase ->not show boolen value -> rebat gase fee
+
+
+
+//call ->gase limit owner gase fee -> show boolen and bytes codes
+
+
+//cons -> call -> use requir
+
+
+
+
+
+
+//fallback
+
+
+contract aqrra{
+
+
+fallback() external payable{
+
+
+
+
+}
+
+
+function checkBlacn() public view returns(uint){
+
+
+return address(this).balance;
+
+}
+
+
+}
+
+
+//receive
+
+
+
+
+contract recevi{
+
+
+event log(string _fun, address sender ,  uint _val , bytes _data);
+
+
+
+
+
+fallback() external payable{
+
+
+emit log("fallback" )
+
+}
+
+
+
+receive() external payable{
+
+
+
+}
+
+
+
+
+function checkBlacn() public view returns(uint){
+
+
+return address(this).balance;
+
+}
+
+}
+
+
+
+
+
+
+///send transfer importantg
+
+
+
+//smart contract to send  ether any account
+
+
+
+contract recevi{
+
+// address 
+
+//smart contract to send  ether any account
+
+
+address payable public owen=payable(0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB);
+
+receive() external payable {
+
+
+
+}
+
+
+function  cechbal() public view  returns(uint){
+
+
+    return address(this).balance;
+}
+
+
+//send not important
+function Send() public{
+
+
+bool sent= owen.send( 1000000000000000000);
+
+
+require( sent , "transfer is falide");
+
+}
+
+
+//tranfer not user more people
+function Tran() public{
+
+
+
+owen.transfer(1 ether);
+
+}
+
+//call important function
+
+
+function CALL() public{
+
+
+(bool sents ,bytes memory data)=owen.call{value:1 ether}("");
+
+require(sents , "tran is falll");
+
+}
+
+
+
+function CALL(address payable owen) public payable{
+
+
+(bool sents ,)=owen.call{value:msg.value}("");
+
+require(sents , "tran is falll");
+
+}
+
+
+}
+
+
+
+
+
+
+contract you{
+
+
+address payable public ower=payable(0x03C6FcED478cBbC9a4FAB34eF9f40767739D1Ff7);
+
+
+address payable public owen=payable(msg.sender);
+
+
+receive() external payable{
+
+
+
+}
+
+
+function checkbalance() public view returns(uint){
+
+
+return address(this).balance;
+
+}
+
+
+function TransOther() public{
+
+
+
+(bool sents,)=ower.call{value: 2 ether}("");
+
+
+require(sents , "some problem for tranfor");
+
+
+}
+
+
+function withdrawa()public{
+
+
+payable(msg.sender).transfer(2 ether);
+
+}
+
+}

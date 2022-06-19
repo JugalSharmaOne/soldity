@@ -1,0 +1,327 @@
+function code line all
+
+
+::///// uint public gae=20;
+
+
+// function add(uint _x,  uint _y) public pure returns(uint){
+
+
+// return  _x + _y;
+// }
+
+
+// function changeAge() public{
+
+//     gae+=1;
+// }
+
+
+// function getage() public view returns(uint){
+
+
+//     return gae;
+// }
+
+
+// function fun() internal{
+
+// //code;
+
+// }
+
+// }
+
+
+
+// function dummy(uint _x)  pure  returns(uint){
+
+
+//     return _x*10;
+// }
+
+// bool public bollTemp=true;
+
+// uint public temp=243;
+
+// int public temp2=12;
+
+// address public ower=0x5584666Cb969eD197E71e66be55396053DDf7bbB;
+
+
+
+
+
+
+:://state varible line code
+
+
+
+contract age{
+
+uint public salary;
+
+constructor(){
+
+    salary=1000;
+}
+
+
+function setSac() public{
+
+    salary=20000;
+}
+
+}
+
+
+//loacal 
+
+contract age{
+
+//local var stora memory
+
+
+uint public age;
+
+bool public b;
+
+
+
+address public newAdd;
+
+
+function fun(uint x , bool y , address z)  public  returns(uint , bool){
+
+
+uint i = 29;
+
+bool b1 = true;
+
+ i+29;
+ b1=false;
+
+ age =x;
+
+
+ b=y;
+
+
+ newAdd=z;
+
+
+return(i , b1);
+
+}
+
+}
+
+
+
+
+:://gobale veraible /// 
+
+contract age{
+
+//global variable
+
+
+address public myadd=msg.sender;
+
+uint public time =block.timestamp;
+
+uint public gascost=tx.gasprice;
+
+
+uint public diff =block.difficulty;
+
+return _x*10;
+}
+
+
+
+
+::///default variable
+
+
+
+
+
+
+contract age{
+
+//duflet variable
+
+uint public x;
+
+bool public y;
+
+
+address public z;
+
+
+bytes32 public a;
+
+
+
+string public str;
+
+
+
+}
+
+//view and pure 
+
+
+
+contract  array{
+
+
+uint public age=22;
+
+function viewFunction() public view returns(uint){
+
+
+
+return age;
+
+}
+
+//pure function
+
+
+function pureFun() public  pure returns(uint){
+
+
+return 1;
+
+}
+
+
+function getetr() public{
+
+age=age+10;
+
+}
+
+}
+
+
+
+
+
+
+//string variable start
+
+
+
+contract array{
+
+string public news="jugal shrama"; //state variable
+
+
+function getter(string memory _x)  public pure returns(string memory) {
+
+
+string memory name=_x;
+
+
+
+
+return name;
+
+}
+
+
+}
+
+
+
+
+///:://constant
+
+
+contract array{
+
+//constants  low gas fee
+
+
+address public constant owerde=0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; //21442
+
+address public  owerde2=0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; //23553
+
+
+
+
+}
+
+
+
+
+
+
+//constructor
+contract array{
+
+
+uint public  age;
+
+
+address public ower;
+
+
+
+string public name;
+
+constructor(string memory _names,uint _x , address _owers){
+
+   age=10;
+
+   ower=_owers;
+
+   name=_names;
+
+
+}
+
+
+//array line arrau
+
+
+
+uint[] public age;
+
+function  getter(uint arra)public{
+
+
+age.push(arra);
+
+}
+
+
+function Len()public view returns(uint){
+
+return age.length;
+
+
+}
+
+
+}
+
+
+
+
+
+bytes public ower="abce";
+
+
+
+function getter()public{
+
+
+
+ower.push("b");
+
+
+}
